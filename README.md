@@ -33,7 +33,9 @@ docker run -p 5000:5000 todo-api-with-node
 ### 4️⃣ Open in Browser or Use API Client
 
 Visit: [http://localhost:5000](http://localhost:5000)
+
 ---
+
 ## 💡 Run Without Docker
 
 You can also run this app manually:
