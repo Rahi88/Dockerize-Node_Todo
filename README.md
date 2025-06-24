@@ -1,24 +1,70 @@
-# A simple experimental Todo Web API with Node.js And Express.js
+# 📝 Node.js Todo API (Dockerized)
 
-This is an experimental Todo Web API. There is no any database system behind it. It holds the item data in memory. You can use it in your experimental projects.
+This is a simple Node.js-based Todo API built using Express.js.  
+It demonstrates how to Dockerize a basic RESTful API without a database.
 
-This repo has been used by educational purpose for writing [this article](https://medium.com/@metehansenol/creating-a-restful-web-api-with-node-js-and-express-js-from-scratch-9ba6e21d58b9?source=friends_link&sk=55890ea51731640749f882c41135af65)
+## 🛠 Features
 
-## Explore
+- ✅ RESTful API with Express.js  
+- ✅ In-memory task storage (no DB)  
+- ✅ Dockerized for easy setup and execution
 
-[todowebapi.herokuapp.com](https://todowebapi.herokuapp.com)
+## 🚀 Quick Start (Using Docker)
 
-## Getting Started
+### 1️⃣ Clone the Repository
 
-To running locally
+```bash
+git clone https://github.com/Rahi88/Dockerize-Node_Todo.git
+cd Dockerize-Node_Todo
+````
 
+### 2️⃣ Build the Docker Image
+
+```bash
+docker build -t todo-api-with-node .
 ```
+
+### 3️⃣ Run the App
+
+```bash
+docker run -p 5000:5000 todo-api-with-node
+```
+
+### 4️⃣ Open in Browser or Use API Client
+
+Visit: [http://localhost:5000](http://localhost:5000)
+
+## 💡 Run Without Docker
+
+You can also run this app manually:
+
+### 1️⃣ Install Dependencies
+
+```bash
 npm install
-npm start
 ```
 
-To running tests
+### 2️⃣ Start the App
 
+```bash
+node server.js
 ```
-npm test
-```
+
+## 🔧 Technologies Used
+
+* Node.js 18 (slim)
+* Express.js
+* Docker
+
+## 📁 File Highlights
+
+* `server.js` → Main entry point with routing logic
+* `Dockerfile` → Contains image build steps
+* `.dockerignore` → Prevents unnecessary files from being added to Docker image
+
+## 📌 Notes
+
+* App listens on port **5000** by default
+* Ideal for beginners learning Docker and Node.js APIs without DB integration
+
+
